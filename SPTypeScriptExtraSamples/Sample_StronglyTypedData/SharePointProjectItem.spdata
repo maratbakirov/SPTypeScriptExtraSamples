@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ProjectItem Type="Microsoft.VisualStudio.SharePoint.Module" DefaultFile="Elements.xml" SupportedTrustLevels="All" SupportedDeploymentScopes="Web, Site" xmlns="http://schemas.microsoft.com/VisualStudio/2010/SharePointTools/SharePointProjectItemModel">
+  <Files>
+    <ProjectItemFile Source="Elements.xml" Target="Sample_StronglyTypedData\" Type="ElementManifest" />
+    <ProjectItemFile Source="Default.aspx" Target="Sample_StronglyTypedData\" Type="ElementFile" />
+    <ProjectItemFile Source="StronglyTypedData.ts" Target="Sample_StronglyTypedData\" Type="ElementFile" />
+    <ProjectItemFile Source="StronglyTypedData.js" Target="Sample_StronglyTypedData\" Type="ElementFile" />
+    <ProjectItemFile Source="StronglyTypedData.js.map" Target="Sample_StronglyTypedData\" Type="ElementFile" />
+    <ProjectItemFile Source="StronglyTypedData.min.js.map" Target="Sample_StronglyTypedData\" Type="ElementFile" />
+  </Files>
+</ProjectItem>

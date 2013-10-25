@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <ListInstance Title="StronglyTypedList" OnQuickLaunch="TRUE" TemplateType="10004" Url="Lists/StronglyTypedList" Description="My List Instance">
+    <Data>
+      <Rows>
+        <Row>
+          <Field Name="ID">1</Field>
+          <Field Name="Title">Title 1</Field>
+          <Field Name="Number">42</Field>
+        </Row>
+        <Row>
+          <Field Name="ID">2</Field>
+          <Field Name="Title">Title 2</Field>
+          <Field Name="Number">666</Field>
+        </Row>
+      </Rows>
+    </Data>
+  </ListInstance>
+</Elements>

@@ -29,10 +29,12 @@
 <asp:Content ContentPlaceHolderID="PlaceHolderMain" runat="server">
 
     <div>
-        <p id="message">
-            <!-- The following content will be replaced with the user name when you run the app - see App.js -->
-            initializing...
-        </p>
+        <h3>Typescript Definitions for SharePoint Samples</h3>
+        <p>All these samples were created using Typescript. Examine project source code for details.</p>
+        <ol>
+            <li><a href="../Sample_StronglyTypedData/">A sample for accessing list data in a strongly typed way</a></li>
+        </ol>
     </div>
+
 
 </asp:Content>

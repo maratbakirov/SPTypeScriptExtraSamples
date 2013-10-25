@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <Module Name="Sample_StronglyTypedData">
+    <File Path="Sample_StronglyTypedData\Default.aspx" Url="Sample_StronglyTypedData/Default.aspx" ReplaceContent="TRUE"/>
+    <File Path="Sample_StronglyTypedData\StronglyTypedData.ts" Url="Sample_StronglyTypedData/StronglyTypedData.ts" ReplaceContent="TRUE" />
+    <File Path="Sample_StronglyTypedData\StronglyTypedData.js" Url="Sample_StronglyTypedData/StronglyTypedData.js" ReplaceContent="TRUE" />
+    <File Path="Sample_StronglyTypedData\StronglyTypedData.js.map" Url="Sample_StronglyTypedData/StronglyTypedData.js.map" ReplaceContent="TRUE" />
+    <File Path="Sample_StronglyTypedData\StronglyTypedData.min.js.map" Url="Sample_StronglyTypedData/StronglyTypedData.min.js.map" ReplaceContent="TRUE" />
+  </Module>
+</Elements>

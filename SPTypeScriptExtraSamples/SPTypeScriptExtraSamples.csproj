@@ -1,5 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.Default.props" />
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -49,10 +50,28 @@
     <Content Include="Pages\Default.aspx" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Sample_StronglyTypedData\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{9877d4f3-4a84-4796-9a04-94c79873c752}</SharePointProjectItemId>
+    </None>
+    <None Include="Sample_StronglyTypedData\StronglyTypedData.js.map" />
+    <None Include="Sample_StronglyTypedData\StronglyTypedData.min.js.map" />
+    <None Include="Sample_StronglyTypedData\StronglyTypedList\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{52b0b42d-05c8-46a6-84d8-44e5f478c4ca}</SharePointProjectItemId>
+    </None>
+    <None Include="Sample_StronglyTypedData\StronglyTypedList\StronglyTypedListInstance\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{b10e5544-bedf-4ce2-bdd7-3130ae8e1072}</SharePointProjectItemId>
+    </None>
     <None Include="Scripts\jquery-1.9.1.min.map" />
     <None Include="Scripts\SharePointProjectItem.spdata">
       <SharePointProjectItemId>{33e3678e-f5b2-4d23-9f6d-6738b23978ee}</SharePointProjectItemId>
     </None>
+    <Content Include="Sample_StronglyTypedData\Default.aspx" />
+    <Content Include="Sample_StronglyTypedData\Elements.xml" />
+    <Content Include="Sample_StronglyTypedData\StronglyTypedData.js" />
+    <Content Include="Sample_StronglyTypedData\StronglyTypedData.min.js" />
+    <Content Include="Sample_StronglyTypedData\StronglyTypedList\Elements.xml" />
+    <Content Include="Sample_StronglyTypedData\StronglyTypedList\Schema.xml" />
+    <Content Include="Sample_StronglyTypedData\StronglyTypedList\StronglyTypedListInstance\Elements.xml" />
     <Content Include="Scripts\Elements.xml" />
     <Content Include="Scripts\App.js" />
     <Content Include="Scripts\jquery-1.9.1.intellisense.js" />
@@ -95,10 +114,21 @@
       <SubType>Designer</SubType>
     </AppManifestFile>
   </ItemGroup>
+  <ItemGroup>
+    <TypeScriptCompile Include="Sample_StronglyTypedData\StronglyTypedData.ts" />
+    <TypeScriptCompile Include="Scripts\typings\sharepoint\SharePoint.d.ts" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
   </PropertyGroup>
   <Import Project="$(VSToolsPath)\SharePointTools\Microsoft.VisualStudio.SharePoint.targets" Condition="'$(VSToolsPath)' != ''" />
+  <PropertyGroup>
+    <TypeScriptTarget>ES3</TypeScriptTarget>
+    <TypeScriptIncludeComments>false</TypeScriptIncludeComments>
+    <TypeScriptSourceMap>true</TypeScriptSourceMap>
+  </PropertyGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.targets" />
+
 </Project>
