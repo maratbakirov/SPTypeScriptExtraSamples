@@ -1,4 +1,6 @@
 SPTypeScriptExtraSamples
 ========================
 
-Extra samples for type script 
+Extra samples for the project http://sptypescript.codeplex.com
+
+
